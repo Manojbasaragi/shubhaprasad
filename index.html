@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+            flex-direction: column;
+            animation: back 2s infinite;
+        }
+        @keyframes back{
+            0%{background-color: black;}
+            30%{background-color: rgb(122, 233, 52)}
+            60%{background-color: rgb(226, 65, 65);}
+            100%{background-color: rgb(44, 76, 239);}
+        }
+        h1{
+            color: white;
+            text-shadow: 0 0 10px cyan;
+        }
+        img{
+            animation:move 2s infinite;
+        }
+        @keyframes move{
+            0%{transform: translate(50px,50px)}
+            50%{transform: translate(-50px,-50px)}
+        }
+        @media(max-width:600px)
+        {
+           img{
+            width: 400px;
+            height: 300px;
+           }
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <h1>OPEN FOR SURPRISE</h1>
+   <a href="subha.html"> <img src="https://cdn.pixabay.com/photo/2013/07/12/12/58/mail-146645_1280.png" alt="" width="600" height="400px"></a>
+</body>
+</html>
